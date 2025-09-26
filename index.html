@@ -1,73 +1,175 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width,initial-scale=1" />
-<title>Live Flipkart Festival — Mockup</title>
-<style>
-  :root{
-    --bg:#0b57a4;
-    --accent:#ffd84d;
-    --card:#ffffff;
-    --muted:#6b7280;
-    --round:16px;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-  }
-  html,body{height:100%;margin:0;}
-  body{
-    background: linear-gradient(180deg,#e9f3ff 0%,#f8fbff 100%);
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    padding:18px;
-  }
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Live Flipkart Festival</title>
+  <style>
+    body {
+      font-family: system-ui, Arial, sans-serif;
+      margin: 0;
+      background: #f3f8ff;
+      padding: 20px;
+    }
+    .phone {
+      width: 360px;
+      margin: 0 auto;
+      background: #fff;
+      border-radius: 16px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+      overflow: hidden;
+    }
+    header {
+      background: #0b57a4;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+    header h1 {
+      font-size: 18px;
+      margin: 0 0 6px 0;
+    }
+    .countdown {
+      background: rgba(255,255,255,0.15);
+      padding: 6px 12px;
+      border-radius: 20px;
+      font-weight: bold;
+      display: inline-block;
+      margin-top: 8px;
+    }
+    main {
+      padding: 14px;
+    }
+    .section {
+      margin-bottom: 16px;
+    }
+    .section h2 {
+      font-size: 14px;
+      margin: 0 0 8px;
+      font-weight: bold;
+    }
+    .carousel {
+      display: flex;
+      gap: 10px;
+      overflow-x: auto;
+      padding-bottom: 6px;
+    }
+    .pill {
+      min-width: 140px;
+      background: #f8fbff;
+      border-radius: 10px;
+      padding: 10px;
+      font-size: 12px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    }
+    .pill strong {
+      font-size: 13px;
+      display: block;
+      margin-bottom: 4px;
+    }
+    .grid {
+      display: flex;
+      gap: 10px;
+    }
+    .product {
+      flex: 1;
+      background: #fff8ec;
+      border-radius: 10px;
+      padding: 10px;
+      font-size: 12px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    }
+    .product strong {
+      font-size: 13px;
+      display: block;
+      margin-bottom: 4px;
+    }
+    .brands {
+      display: flex;
+      gap: 8px;
+      overflow-x: auto;
+    }
+    .brand {
+      min-width: 80px;
+      background: #f3f6fb;
+      text-align: center;
+      border-radius: 8px;
+      padding: 8px;
+      font-size: 13px;
+      font-weight: bold;
+      color: #444;
+    }
+    .cta {
+      display: block;
+      width: 100%;
+      padding: 14px;
+      border-radius: 10px;
+      border: none;
+      background: linear-gradient(90deg, #ffd84d, #ffb84d);
+      font-weight: bold;
+      font-size: 14px;
+      color: #05335a;
+      margin-top: 10px;
+      cursor: pointer;
+    }
+    footer {
+      border-top: 1px solid #eee;
+      display: flex;
+      justify-content: space-around;
+      padding: 12px;
+      font-size: 13px;
+      color: #777;
+    }
+  </style>
+</head>
+<body>
+  <div class="phone">
+    <header>
+      <h1>✨ LIVE FLIPKART FESTIVAL</h1>
+      <p>Non-stop shopping, Q&As & exclusive drops</p>
+      <div class="countdown">LIVE IN 2 DAYS • 48:12:09</div>
+    </header>
 
-  /* Phone frame */
-  .phone{
-    width:360px;
-    height:760px;
-    background:#fff;
-    border-radius:28px;
-    box-shadow:0 22px 60px rgba(3,10,25,0.12);
-    overflow:hidden;
-    display:flex;
-    flex-direction:column;
-  }
+    <main>
+      <div class="section">
+        <h2>Influencer Schedule</h2>
+        <div class="carousel">
+          <div class="pill"><strong>Technical Guru</strong>Mobiles • Sept 28, 6PM</div>
+          <div class="pill"><strong>Fashion Diva</strong>Clothing • Sept 29, 4PM</div>
+          <div class="pill"><strong>Gadget Pro</strong>Electronics • Sept 29, 8PM</div>
+          <div class="pill"><strong>Beauty Star</strong>Cosmetics • Sept 30, 5PM</div>
+        </div>
+      </div>
 
-  /* Header / hero */
-  header{
-    background:var(--bg);
-    color:white;
-    padding:18px;
-  }
-  .hero{ height:200px; display:flex; flex-direction:column; justify-content:center; gap:10px; }
-  .festival-title{ font-size:18px; font-weight:800; letter-spacing:0.2px;}
-  .hero-sub{ font-size:13px; opacity:0.95; }
-  .countdown{ display:inline-block; background: rgba(255,255,255,0.12); padding:8px 12px; border-radius:999px; font-weight:700; font-size:13px; }
+      <div class="section">
+        <h2>Exclusive Drops</h2>
+        <div class="grid">
+          <div class="product"><strong>iPhone 16 Pro</strong>Price lock revealed live</div>
+          <div class="product"><strong>Puma Sneakers</strong>Price lock revealed live</div>
+          <div class="product"><strong>Philips Air Fryer</strong>Price lock revealed live</div>
+        </div>
+      </div>
 
-  /* Main content */
-  main{ padding:14px; flex:1; overflow:auto; -webkit-overflow-scrolling:touch; }
-  .section{ background:var(--card); border-radius:12px; padding:12px; margin-bottom:12px; box-shadow:0 4px 12px rgba(10,20,40,0.04); }
-  .section-title{ display:flex; justify-content:space-between; align-items:center; font-weight:700; margin-bottom:10px; font-size:14px; }
+      <div class="section">
+        <h2>Partner Brands</h2>
+        <div class="brands">
+          <div class="brand">Samsung</div>
+          <div class="brand">Puma</div>
+          <div class="brand">Philips</div>
+          <div class="brand">LG</div>
+          <div class="brand">Nike</div>
+        </div>
+      </div>
 
-  /* Influencer carousel */
-  .carousel{ display:flex; gap:10px; overflow:auto; padding-bottom:6px; }
-  .influencer{ min-width:160px; border-radius:12px; padding:10px; background:linear-gradient(180deg,#fff,#f8fbff); box-shadow:0 6px 18px rgba(11,34,68,0.06); display:flex; gap:10px; align-items:center; }
-  .avatar{ width:48px; height:48px; border-radius:50%; display:flex; align-items:center; justify-content:center; font-weight:800; color:#063052; font-size:16px; background:linear-gradient(180deg,#ffd84d,#ff9f1c); }
-  .inf-name{ font-size:13px; font-weight:800; }
-  .inf-meta{ font-size:11px; color:var(--muted); margin-top:4px; }
+      <button class="cta">💙 Get Notified & Win ₹500 Coupon</button>
+    </main>
 
-  /* Exclusive drops grid */
-  .grid{ display:flex; gap:10px; flex-wrap:nowrap; overflow:auto; }
-  .product{ min-width:200px; border-radius:12px; background:#fff; padding:10px; display:flex; flex-direction:column; gap:10px; box-shadow:0 6px 22px rgba(7,20,34,0.05); }
-  .svg-img{ width:100%; height:110px; border-radius:8px; overflow:hidden; display:flex; align-items:center; justify-content:center; background:#f3f6fb; }
-  .tag{ background:linear-gradient(90deg,#fff9e0,#fff1c2); padding:6px 8px; border-radius:999px; font-weight:700; font-size:11px; color:#6b4b00; display:inline-block; }
-  .set-rem{ background:var(--bg); color:white; padding:8px 10px; border-radius:10px; font-weight:800; font-size:13px; border:none; cursor:pointer; }
-
-  /* brands */
-  .brands{ display:flex; gap:10px; align-items:center; overflow:auto; padding:6px 2px; }
-  .brand{ min-width:72px; height:36px; background:#f3f6fb; display:flex; align-items:center; justify-content:center; border-radius:8px; color:var(--muted); font-weight:800; font-size:13px; }
-
-  /* CTA */
-  .cta{ display:flex; justify-content:center; margin:8px 0 16px; }
-  .cta button{ width:92%; padding:12px 16px; border-radius:12px; background:linear-gradient(90deg,var(--accent),#ffb84d); border:none; font-weight:900; font-size:15px; color:#05335a; box-shadow:0 8px 20px rgba(255,184,77,0.18); cur
+    <footer>
+      <div>Home</div>
+      <div>Categories</div>
+      <div>Cart</div>
+      <div>Profile</div>
+    </footer>
+  </div>
+</body>
+</html>
