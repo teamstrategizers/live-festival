@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Live Flipkart Festival — Mockup</title>
+<style>
+  :root{
+    --bg:#0b57a4;
+    --accent:#ffd84d;
+    --card:#ffffff;
+    --muted:#6b7280;
+    --round:16px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  }
+  html,body{height:100%;margin:0;}
+  body{
+    background: linear-gradient(180deg,#e9f3ff 0%,#f8fbff 100%);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    padding:18px;
+  }
+
+  /* Phone frame */
+  .phone{
+    width:360px;
+    height:760px;
+    background:#fff;
+    border-radius:28px;
+    box-shadow:0 22px 60px rgba(3,10,25,0.12);
+    overflow:hidden;
+    display:flex;
+    flex-direction:column;
+  }
+
+  /* Header / hero */
+  header{
+    background:var(--bg);
+    color:white;
+    padding:18px;
+  }
+  .hero{ height:200px; display:flex; flex-direction:column; justify-content:center; gap:10px; }
+  .festival-title{ font-size:18px; font-weight:800; letter-spacing:0.2px;}
+  .hero-sub{ font-size:13px; opacity:0.95; }
+  .countdown{ display:inline-block; background: rgba(255,255,255,0.12); padding:8px 12px; border-radius:999px; font-weight:700; font-size:13px; }
+
+  /* Main content */
+  main{ padding:14px; flex:1; overflow:auto; -webkit-overflow-scrolling:touch; }
+  .section{ background:var(--card); border-radius:12px; padding:12px; margin-bottom:12px; box-shadow:0 4px 12px rgba(10,20,40,0.04); }
+  .section-title{ display:flex; justify-content:space-between; align-items:center; font-weight:700; margin-bottom:10px; font-size:14px; }
+
+  /* Influencer carousel */
+  .carousel{ display:flex; gap:10px; overflow:auto; padding-bottom:6px; }
+  .influencer{ min-width:160px; border-radius:12px; padding:10px; background:linear-gradient(180deg,#fff,#f8fbff); box-shadow:0 6px 18px rgba(11,34,68,0.06); display:flex; gap:10px; align-items:center; }
+  .avatar{ width:48px; height:48px; border-radius:50%; display:flex; align-items:center; justify-content:center; font-weight:800; color:#063052; font-size:16px; background:linear-gradient(180deg,#ffd84d,#ff9f1c); }
+  .inf-name{ font-size:13px; font-weight:800; }
+  .inf-meta{ font-size:11px; color:var(--muted); margin-top:4px; }
+
+  /* Exclusive drops grid */
+  .grid{ display:flex; gap:10px; flex-wrap:nowrap; overflow:auto; }
+  .product{ min-width:200px; border-radius:12px; background:#fff; padding:10px; display:flex; flex-direction:column; gap:10px; box-shadow:0 6px 22px rgba(7,20,34,0.05); }
+  .svg-img{ width:100%; height:110px; border-radius:8px; overflow:hidden; display:flex; align-items:center; justify-content:center; background:#f3f6fb; }
+  .tag{ background:linear-gradient(90deg,#fff9e0,#fff1c2); padding:6px 8px; border-radius:999px; font-weight:700; font-size:11px; color:#6b4b00; display:inline-block; }
+  .set-rem{ background:var(--bg); color:white; padding:8px 10px; border-radius:10px; font-weight:800; font-size:13px; border:none; cursor:pointer; }
+
+  /* brands */
+  .brands{ display:flex; gap:10px; align-items:center; overflow:auto; padding:6px 2px; }
+  .brand{ min-width:72px; height:36px; background:#f3f6fb; display:flex; align-items:center; justify-content:center; border-radius:8px; color:var(--muted); font-weight:800; font-size:13px; }
+
+  /* CTA */
+  .cta{ display:flex; justify-content:center; margin:8px 0 16px; }
+  .cta button{ width:92%; padding:12px 16px; border-radius:12px; background:linear-gradient(90deg,var(--accent),#ffb84d); border:none; font-weight:900; font-size:15px; color:#05335a; box-shadow:0 8px 20px rgba(255,184,77,0.18); cur
